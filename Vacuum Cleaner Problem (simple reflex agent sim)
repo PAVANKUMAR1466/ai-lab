@@ -1,0 +1,6 @@
+rooms={'A':'dirty','B':'clean'}; loc='A'
+def act(loc):
+    if rooms[loc]=='dirty': rooms[loc]='clean'; return 'suck'
+    else:
+        return 'right' if loc=='A' else 'left'
+print(act(loc)); loc='B'; print(act(loc)); print(rooms)
